@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border: 3px solid black;
+    background-color: goldenrod;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    width: 320px;
+    grid-template-rows: repeat(6, 65px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 65px;
+    grid-gap: 3px;
+}
+button{
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px black;
+}
+button[id="input"]:hover{
+    cursor: auto;
+    box-shadow: none;
+}
+.input{
+    grid-column: span 4;
+    text-align: right;
+    padding: 0 10px;
+}
+.c{
+    grid-column: span 3;
+    background-color: rgb(220, 42, 42);
+}
+.result{
+    grid-column: span 2;
+}
+.option{
+    background-color: orange;
+}
+.dot{
+    background-color: green;
+}
